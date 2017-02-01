@@ -18,6 +18,7 @@
 mv vendor/k8s.io/apimachinery/ apimachinery
 
 find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/apimachinery|k8s.io/client-go/apimachinery|'
+find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/client-go/pkg/api/v1|k8s.io/client-go/apimachinery/pkg/api/v1|'
 find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/client-go|github.com/lavalamp/client-go-flat|'
 
 git add apimachinery
