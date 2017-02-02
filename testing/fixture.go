@@ -20,14 +20,14 @@ import (
 	"fmt"
 	"sync"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/apimachinery/registered"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/watch"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/registered"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // ObjectTracker keeps track of objects. It is intended to be used to

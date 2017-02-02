@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"reflect"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/conversion"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/apis/extensions"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/validation/field"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/apis/extensions"
 )
 
 const (

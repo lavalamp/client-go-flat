@@ -19,12 +19,12 @@ package discovery
 import (
 	"fmt"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
-	apimachineryversion "k8s.io/apimachinery/pkg/version"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	apimachineryversion "github.com/lavalamp/client-go-flat/apimachinery/pkg/version"
 	// Import solely to initialize client auth plugins.
-	_ "k8s.io/client-go/plugin/pkg/client/auth"
+	_ "github.com/lavalamp/client-go-flat/plugin/pkg/client/auth"
 )
 
 // MatchesServerVersion queries the server to compares the build version

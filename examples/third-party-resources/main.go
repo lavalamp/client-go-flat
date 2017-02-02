@@ -4,19 +4,19 @@ import (
 	"flag"
 	"fmt"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/apis/extensions/v1beta1"
-	"k8s.io/client-go/rest"
-	"k8s.io/client-go/tools/clientcmd"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer"
+	"github.com/lavalamp/client-go-flat/kubernetes"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/apis/extensions/v1beta1"
+	"github.com/lavalamp/client-go-flat/rest"
+	"github.com/lavalamp/client-go-flat/tools/clientcmd"
 
 	// Only required to authenticate against GKE clusters
-	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
+	_ "github.com/lavalamp/client-go-flat/plugin/pkg/client/auth/gcp"
 )
 
 var (

@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	clientauth "k8s.io/client-go/tools/auth"
+	clientauth "github.com/lavalamp/client-go-flat/tools/auth"
 )
 
 func TestLoadFromFile(t *testing.T) {

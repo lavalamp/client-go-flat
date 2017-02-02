@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"strings"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
 )
 
 func RoleRefGroupKind(roleRef RoleRef) schema.GroupKind {

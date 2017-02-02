@@ -17,10 +17,10 @@ limitations under the License.
 package fake
 
 import (
-	"k8s.io/client-go/pkg/api/v1"
-	policy "k8s.io/client-go/pkg/apis/policy/v1beta1"
-	restclient "k8s.io/client-go/rest"
-	core "k8s.io/client-go/testing"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	policy "github.com/lavalamp/client-go-flat/pkg/apis/policy/v1beta1"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	core "github.com/lavalamp/client-go-flat/testing"
 )
 
 func (c *FakePods) Bind(binding *v1.Binding) error {

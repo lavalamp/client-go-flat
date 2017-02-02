@@ -19,8 +19,8 @@ package v1beta1
 import (
 	"fmt"
 
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

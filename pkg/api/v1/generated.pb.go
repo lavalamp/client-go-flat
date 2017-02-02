@@ -192,11 +192,11 @@ import proto "github.com/gogo/protobuf/proto"
 import fmt "fmt"
 import math "math"
 
-import k8s_io_apimachinery_pkg_api_resource "k8s.io/apimachinery/pkg/api/resource"
-import k8s_io_apimachinery_pkg_apis_meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-import k8s_io_apimachinery_pkg_runtime "k8s.io/apimachinery/pkg/runtime"
+import k8s_io_apimachinery_pkg_api_resource "github.com/lavalamp/client-go-flat/apimachinery/pkg/api/resource"
+import k8s_io_apimachinery_pkg_apis_meta_v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+import k8s_io_apimachinery_pkg_runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 
-import k8s_io_apimachinery_pkg_types "k8s.io/apimachinery/pkg/types"
+import k8s_io_apimachinery_pkg_types "github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
 
 import strings "strings"
 import reflect "reflect"

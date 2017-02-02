@@ -21,10 +21,10 @@ limitations under the License.
 package v1
 
 import (
-	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	types "k8s.io/apimachinery/pkg/types"
+	meta_v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	conversion "github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	types "github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
 	reflect "reflect"
 )
 

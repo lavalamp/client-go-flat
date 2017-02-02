@@ -17,7 +17,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	policy "k8s.io/client-go/pkg/apis/policy/v1beta1"
+	policy "github.com/lavalamp/client-go-flat/pkg/apis/policy/v1beta1"
 )
 
 // The EvictionExpansion interface allows manually adding extra methods to the ScaleInterface.

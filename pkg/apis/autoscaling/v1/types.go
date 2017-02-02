@@ -16,7 +16,7 @@ limitations under the License.
 
 package v1
 
-import metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+import metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
 
 // CrossVersionObjectReference contains enough information to let you identify the referred resource.
 type CrossVersionObjectReference struct {

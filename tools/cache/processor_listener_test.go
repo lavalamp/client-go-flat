@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/wait"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/wait"
 )
 
 // TestPopReleaseLock tests that when processor listener blocks on chan,

@@ -17,13 +17,13 @@ limitations under the License.
 package api
 
 import (
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/intstr"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/resource"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/fields"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
 )
 
 // Common string formats
@@ -57,7 +57,7 @@ import (
 
 // ObjectMeta is metadata that all persisted resources must have, which includes all objects
 // users must create.
-// DEPRECATED: Use k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta instead - this type will be removed soon.
+// DEPRECATED: Use github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1.ObjectMeta instead - this type will be removed soon.
 type ObjectMeta struct {
 	// Name is unique within a namespace.  Name is required when creating resources, although
 	// some resources may allow a client to request the generation of an appropriate name

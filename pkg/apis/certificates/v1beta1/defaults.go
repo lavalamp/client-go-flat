@@ -16,7 +16,7 @@ limitations under the License.
 
 package v1beta1
 
-import "k8s.io/apimachinery/pkg/runtime"
+import "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {
 	RegisterDefaults(scheme)

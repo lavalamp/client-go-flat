@@ -17,11 +17,11 @@ limitations under the License.
 package fake
 
 import (
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/api/v1"
-	core "k8s.io/client-go/testing"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/fields"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	core "github.com/lavalamp/client-go-flat/testing"
 )
 
 func (c *FakeEvents) CreateWithEventNamespace(event *v1.Event) (*v1.Event, error) {

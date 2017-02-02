@@ -27,17 +27,17 @@ import (
 
 	"fmt"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/api/v1"
-	utiltesting "k8s.io/client-go/util/testing"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/diff"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	utiltesting "github.com/lavalamp/client-go-flat/util/testing"
 
-	_ "k8s.io/client-go/pkg/api/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/api/install"
 )
 
 type TestParam struct {

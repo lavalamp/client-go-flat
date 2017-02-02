@@ -19,7 +19,7 @@ package workqueue
 import (
 	"sync"
 
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
 )
 
 type DoWorkPieceFunc func(piece int)

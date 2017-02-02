@@ -25,15 +25,15 @@ import (
 	"reflect"
 	"testing"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer/streaming"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/watch"
-	restclient "k8s.io/client-go/rest"
-	restclientwatch "k8s.io/client-go/rest/watch"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1/unstructured"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer/streaming"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	restclientwatch "github.com/lavalamp/client-go-flat/rest/watch"
 )
 
 func getJSON(version, kind, name string) []byte {

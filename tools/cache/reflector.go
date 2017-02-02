@@ -34,13 +34,13 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	apierrs "k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/api/meta"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/apimachinery/pkg/watch"
+	apierrs "github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/wait"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
 )
 
 // Reflector watches a specified resource and causes all changes to be reflected in the given store.
@@ -149,8 +149,8 @@ func hasPackage(file string, ignoredPackages []string) bool {
 
 // trimPackagePrefix reduces duplicate values off the front of a package name.
 func trimPackagePrefix(file string) string {
-	if l := strings.LastIndex(file, "k8s.io/client-go/pkg/"); l >= 0 {
-		return file[l+len("k8s.io/client-go/"):]
+	if l := strings.LastIndex(file, "github.com/lavalamp/client-go-flat/pkg/"); l >= 0 {
+		return file[l+len("github.com/lavalamp/client-go-flat/"):]
 	}
 	if l := strings.LastIndex(file, "/src/"); l >= 0 {
 		return file[l+5:]

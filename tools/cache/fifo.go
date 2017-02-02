@@ -19,7 +19,7 @@ package cache
 import (
 	"sync"
 
-	"k8s.io/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
 )
 
 // PopProcessFunc is passed to Pop() method of Queue interface.

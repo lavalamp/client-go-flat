@@ -17,13 +17,13 @@ limitations under the License.
 package fake
 
 import (
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	labels "k8s.io/apimachinery/pkg/labels"
-	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	types "k8s.io/apimachinery/pkg/types"
-	watch "k8s.io/apimachinery/pkg/watch"
-	v1beta1 "k8s.io/client-go/pkg/apis/certificates/v1beta1"
-	testing "k8s.io/client-go/testing"
+	v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	labels "github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	schema "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	types "github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	watch "github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	v1beta1 "github.com/lavalamp/client-go-flat/pkg/apis/certificates/v1beta1"
+	testing "github.com/lavalamp/client-go-flat/testing"
 )
 
 // FakeCertificateSigningRequests implements CertificateSigningRequestInterface

@@ -17,9 +17,9 @@ limitations under the License.
 package v1beta1
 
 import (
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/client-go/pkg/apis/extensions/v1beta1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/pkg/apis/extensions/v1beta1"
 )
 
 // The ScaleExpansion interface allows manually adding extra methods to the ScaleInterface.

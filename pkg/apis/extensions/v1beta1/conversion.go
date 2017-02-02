@@ -19,14 +19,14 @@ package v1beta1
 import (
 	"fmt"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/conversion"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/intstr"
-	"k8s.io/client-go/pkg/api"
-	v1 "k8s.io/client-go/pkg/api/v1"
-	"k8s.io/client-go/pkg/apis/autoscaling"
-	"k8s.io/client-go/pkg/apis/extensions"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	v1 "github.com/lavalamp/client-go-flat/pkg/api/v1"
+	"github.com/lavalamp/client-go-flat/pkg/apis/autoscaling"
+	"github.com/lavalamp/client-go-flat/pkg/apis/extensions"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

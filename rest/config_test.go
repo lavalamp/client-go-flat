@@ -25,14 +25,14 @@ import (
 
 	fuzz "github.com/google/gofuzz"
 
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/client-go/pkg/api"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/client-go/util/flowcontrol"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/diff"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	clientcmdapi "github.com/lavalamp/client-go-flat/tools/clientcmd/api"
+	"github.com/lavalamp/client-go-flat/util/flowcontrol"
 
-	_ "k8s.io/client-go/pkg/api/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/api/install"
 )
 
 func TestIsConfigTransportTLS(t *testing.T) {

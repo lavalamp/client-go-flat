@@ -21,8 +21,8 @@ limitations under the License.
 package v2alpha1
 
 import (
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	v1 "k8s.io/client-go/pkg/api/v1"
+	runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	v1 "github.com/lavalamp/client-go-flat/pkg/api/v1"
 )
 
 // RegisterDefaults adds defaulters functions to the given scheme.

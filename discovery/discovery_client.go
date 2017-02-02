@@ -25,15 +25,15 @@ import (
 
 	"github.com/emicklei/go-restful/swagger"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
-	"k8s.io/apimachinery/pkg/version"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/api/v1"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/version"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // defaultRetries is the number of times a resource discovery is repeated if an api group disappears on the fly (e.g. ThirdPartyResources).

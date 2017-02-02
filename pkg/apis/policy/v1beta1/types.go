@@ -17,8 +17,8 @@ limitations under the License.
 package v1beta1
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/intstr"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
 )
 
 // PodDisruptionBudgetSpec is a description of a PodDisruptionBudget.

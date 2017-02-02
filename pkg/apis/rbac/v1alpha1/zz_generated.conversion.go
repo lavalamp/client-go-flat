@@ -21,9 +21,9 @@ limitations under the License.
 package v1alpha1
 
 import (
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	rbac "k8s.io/client-go/pkg/apis/rbac"
+	conversion "github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	rbac "github.com/lavalamp/client-go-flat/pkg/apis/rbac"
 	unsafe "unsafe"
 )
 

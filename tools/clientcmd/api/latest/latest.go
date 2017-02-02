@@ -17,12 +17,12 @@ limitations under the License.
 package latest
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer/json"
-	"k8s.io/apimachinery/pkg/runtime/serializer/versioning"
-	"k8s.io/client-go/tools/clientcmd/api"
-	"k8s.io/client-go/tools/clientcmd/api/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer/json"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer/versioning"
+	"github.com/lavalamp/client-go-flat/tools/clientcmd/api"
+	"github.com/lavalamp/client-go-flat/tools/clientcmd/api/v1"
 )
 
 // Version is the string that represents the current external default version.

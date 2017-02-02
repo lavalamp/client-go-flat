@@ -17,8 +17,8 @@ limitations under the License.
 package v1beta1
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
-	v1alpha1 "k8s.io/client-go/kubernetes/typed/rbac/v1alpha1"
-	rest "k8s.io/client-go/rest"
-	testing "k8s.io/client-go/testing"
+	v1alpha1 "github.com/lavalamp/client-go-flat/kubernetes/typed/rbac/v1alpha1"
+	rest "github.com/lavalamp/client-go-flat/rest"
+	testing "github.com/lavalamp/client-go-flat/testing"
 )
 
 type FakeRbacV1alpha1 struct {

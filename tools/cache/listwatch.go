@@ -19,12 +19,12 @@ package cache
 import (
 	"time"
 
-	"k8s.io/apimachinery/pkg/api/meta"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/watch"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/fields"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // ListerWatcher is any object that knows how to perform an initial list and start a watch on a resource.

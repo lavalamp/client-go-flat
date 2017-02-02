@@ -17,8 +17,8 @@ limitations under the License.
 package v1alpha1
 
 import (
-	"k8s.io/apimachinery/pkg/conversion"
-	api "k8s.io/client-go/pkg/apis/rbac"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	api "github.com/lavalamp/client-go-flat/pkg/apis/rbac"
 )
 
 // allAuthenticated matches k8s.io/apiserver/pkg/authentication/user.AllAuthenticated,

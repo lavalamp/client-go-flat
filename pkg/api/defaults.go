@@ -17,9 +17,9 @@ limitations under the License.
 package api
 
 import (
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/fields"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

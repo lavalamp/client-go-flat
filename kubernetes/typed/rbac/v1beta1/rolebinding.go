@@ -17,12 +17,12 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	types "k8s.io/apimachinery/pkg/types"
-	watch "k8s.io/apimachinery/pkg/watch"
-	api "k8s.io/client-go/pkg/api"
-	v1beta1 "k8s.io/client-go/pkg/apis/rbac/v1beta1"
-	rest "k8s.io/client-go/rest"
+	v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	types "github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	watch "github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	api "github.com/lavalamp/client-go-flat/pkg/api"
+	v1beta1 "github.com/lavalamp/client-go-flat/pkg/apis/rbac/v1beta1"
+	rest "github.com/lavalamp/client-go-flat/rest"
 )
 
 // RoleBindingsGetter has a method to return a RoleBindingInterface.

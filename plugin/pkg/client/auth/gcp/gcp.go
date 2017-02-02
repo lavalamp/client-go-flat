@@ -30,9 +30,9 @@ import (
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/google"
-	"k8s.io/apimachinery/pkg/util/yaml"
-	restclient "k8s.io/client-go/rest"
-	"k8s.io/client-go/util/jsonpath"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/yaml"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	"github.com/lavalamp/client-go-flat/util/jsonpath"
 )
 
 func init() {

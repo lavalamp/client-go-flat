@@ -25,11 +25,11 @@ import (
 
 	"github.com/golang/groupcache/lru"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/strategicpatch"
-	"k8s.io/client-go/pkg/api/v1"
-	"k8s.io/client-go/util/clock"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/strategicpatch"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	"github.com/lavalamp/client-go-flat/util/clock"
 )
 
 const (

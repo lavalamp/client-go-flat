@@ -17,8 +17,8 @@ limitations under the License.
 package v1
 
 import (
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/client-go/pkg/api/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
 )
 
 // The NodeExpansion interface allows manually adding extra methods to the NodeInterface.

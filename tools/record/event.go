@@ -21,14 +21,14 @@ import (
 	"math/rand"
 	"time"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/pkg/api/v1"
-	restclient "k8s.io/client-go/rest"
-	"k8s.io/client-go/util/clock"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	"github.com/lavalamp/client-go-flat/util/clock"
 
 	"net/http"
 

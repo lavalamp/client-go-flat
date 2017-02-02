@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/client-go/pkg/api/v1"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
 )
 
 func TestNoMemoryLeak(t *testing.T) {

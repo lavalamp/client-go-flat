@@ -17,7 +17,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	rest "k8s.io/client-go/rest"
+	rest "github.com/lavalamp/client-go-flat/rest"
 )
 
 // LocalSubjectAccessReviewsGetter has a method to return a LocalSubjectAccessReviewInterface.

@@ -30,7 +30,7 @@ import (
 	"github.com/coreos/go-oidc/oidc"
 	"github.com/golang/glog"
 
-	restclient "k8s.io/client-go/rest"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 const (

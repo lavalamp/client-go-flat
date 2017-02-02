@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/client-go/util/clock"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/wait"
+	"github.com/lavalamp/client-go-flat/util/clock"
 )
 
 func TestSimpleQueue(t *testing.T) {

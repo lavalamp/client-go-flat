@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/client-go/pkg/apis/extensions/v1beta1"
-	core "k8s.io/client-go/testing"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/pkg/apis/extensions/v1beta1"
+	core "github.com/lavalamp/client-go-flat/testing"
 )
 
 func (c *FakeScales) Get(kind string, name string) (result *v1beta1.Scale, err error) {

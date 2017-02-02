@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"k8s.io/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
 )
 
 // Store is a generic object storage interface. Reflector knows how to watch a server

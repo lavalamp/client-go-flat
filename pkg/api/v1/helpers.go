@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"strings"
 
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/selection"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/selection"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 // IsOpaqueIntResourceName returns true if the resource name has the opaque

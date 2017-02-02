@@ -19,13 +19,13 @@ package v1
 import (
 	"errors"
 	"fmt"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 	"net/url"
 	"strings"
 
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
 )
 
 var (

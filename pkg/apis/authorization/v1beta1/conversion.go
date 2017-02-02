@@ -17,7 +17,7 @@ limitations under the License.
 package v1beta1
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

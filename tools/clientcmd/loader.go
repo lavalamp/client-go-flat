@@ -30,13 +30,13 @@ import (
 	"github.com/golang/glog"
 	"github.com/imdario/mergo"
 
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	utilerrors "k8s.io/apimachinery/pkg/util/errors"
-	restclient "k8s.io/client-go/rest"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	clientcmdlatest "k8s.io/client-go/tools/clientcmd/api/latest"
-	"k8s.io/client-go/util/homedir"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	utilerrors "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/errors"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	clientcmdapi "github.com/lavalamp/client-go-flat/tools/clientcmd/api"
+	clientcmdlatest "github.com/lavalamp/client-go-flat/tools/clientcmd/api/latest"
+	"github.com/lavalamp/client-go-flat/util/homedir"
 )
 
 const (

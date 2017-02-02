@@ -25,14 +25,14 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/conversion"
-	"k8s.io/apimachinery/pkg/fields"
-	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/selection"
-	"k8s.io/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/resource"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/fields"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/selection"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
 )
 
 // Conversion error conveniently packages up errors in conversions.

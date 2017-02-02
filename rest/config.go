@@ -29,14 +29,14 @@ import (
 
 	"github.com/golang/glog"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/version"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
-	certutil "k8s.io/client-go/util/cert"
-	"k8s.io/client-go/util/flowcontrol"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/version"
+	clientcmdapi "github.com/lavalamp/client-go-flat/tools/clientcmd/api"
+	certutil "github.com/lavalamp/client-go-flat/util/cert"
+	"github.com/lavalamp/client-go-flat/util/flowcontrol"
 )
 
 const (

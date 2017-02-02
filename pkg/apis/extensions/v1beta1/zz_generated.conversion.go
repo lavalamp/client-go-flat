@@ -21,14 +21,14 @@ limitations under the License.
 package v1beta1
 
 import (
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	intstr "k8s.io/apimachinery/pkg/util/intstr"
-	api "k8s.io/client-go/pkg/api"
-	api_v1 "k8s.io/client-go/pkg/api/v1"
-	autoscaling "k8s.io/client-go/pkg/apis/autoscaling"
-	extensions "k8s.io/client-go/pkg/apis/extensions"
+	v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	conversion "github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	intstr "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
+	api "github.com/lavalamp/client-go-flat/pkg/api"
+	api_v1 "github.com/lavalamp/client-go-flat/pkg/api/v1"
+	autoscaling "github.com/lavalamp/client-go-flat/pkg/apis/autoscaling"
+	extensions "github.com/lavalamp/client-go-flat/pkg/apis/extensions"
 	unsafe "unsafe"
 )
 
@@ -1440,14 +1440,14 @@ func Convert_extensions_RollbackConfig_To_v1beta1_RollbackConfig(in *extensions.
 }
 
 func autoConvert_v1beta1_RollingUpdateDeployment_To_extensions_RollingUpdateDeployment(in *RollingUpdateDeployment, out *extensions.RollingUpdateDeployment, s conversion.Scope) error {
-	// WARNING: in.MaxUnavailable requires manual conversion: inconvertible types (*k8s.io/apimachinery/pkg/util/intstr.IntOrString vs k8s.io/apimachinery/pkg/util/intstr.IntOrString)
-	// WARNING: in.MaxSurge requires manual conversion: inconvertible types (*k8s.io/apimachinery/pkg/util/intstr.IntOrString vs k8s.io/apimachinery/pkg/util/intstr.IntOrString)
+	// WARNING: in.MaxUnavailable requires manual conversion: inconvertible types (*github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr.IntOrString vs k8s.io/apimachinery/pkg/util/intstr.IntOrString)
+	// WARNING: in.MaxSurge requires manual conversion: inconvertible types (*github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr.IntOrString vs k8s.io/apimachinery/pkg/util/intstr.IntOrString)
 	return nil
 }
 
 func autoConvert_extensions_RollingUpdateDeployment_To_v1beta1_RollingUpdateDeployment(in *extensions.RollingUpdateDeployment, out *RollingUpdateDeployment, s conversion.Scope) error {
-	// WARNING: in.MaxUnavailable requires manual conversion: inconvertible types (k8s.io/apimachinery/pkg/util/intstr.IntOrString vs *k8s.io/apimachinery/pkg/util/intstr.IntOrString)
-	// WARNING: in.MaxSurge requires manual conversion: inconvertible types (k8s.io/apimachinery/pkg/util/intstr.IntOrString vs *k8s.io/apimachinery/pkg/util/intstr.IntOrString)
+	// WARNING: in.MaxUnavailable requires manual conversion: inconvertible types (github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr.IntOrString vs *k8s.io/apimachinery/pkg/util/intstr.IntOrString)
+	// WARNING: in.MaxSurge requires manual conversion: inconvertible types (github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr.IntOrString vs *k8s.io/apimachinery/pkg/util/intstr.IntOrString)
 	return nil
 }
 
@@ -1541,14 +1541,14 @@ func Convert_extensions_ScaleSpec_To_v1beta1_ScaleSpec(in *extensions.ScaleSpec,
 
 func autoConvert_v1beta1_ScaleStatus_To_extensions_ScaleStatus(in *ScaleStatus, out *extensions.ScaleStatus, s conversion.Scope) error {
 	out.Replicas = in.Replicas
-	// WARNING: in.Selector requires manual conversion: inconvertible types (map[string]string vs *k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector)
+	// WARNING: in.Selector requires manual conversion: inconvertible types (map[string]string vs *github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1.LabelSelector)
 	// WARNING: in.TargetSelector requires manual conversion: does not exist in peer-type
 	return nil
 }
 
 func autoConvert_extensions_ScaleStatus_To_v1beta1_ScaleStatus(in *extensions.ScaleStatus, out *ScaleStatus, s conversion.Scope) error {
 	out.Replicas = in.Replicas
-	// WARNING: in.Selector requires manual conversion: inconvertible types (*k8s.io/apimachinery/pkg/apis/meta/v1.LabelSelector vs map[string]string)
+	// WARNING: in.Selector requires manual conversion: inconvertible types (*github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1.LabelSelector vs map[string]string)
 	return nil
 }
 

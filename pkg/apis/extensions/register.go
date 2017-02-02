@@ -17,9 +17,9 @@ limitations under the License.
 package extensions
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/client-go/pkg/apis/autoscaling"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/pkg/apis/autoscaling"
 )
 
 // GroupName is the group name use in this package

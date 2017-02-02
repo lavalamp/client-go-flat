@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"sync"
 
-	"k8s.io/apimachinery/pkg/api/errors"
-	"k8s.io/apimachinery/pkg/api/meta"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/errors"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
 
 	"github.com/golang/glog"
 )

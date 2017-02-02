@@ -19,12 +19,12 @@ package api
 import (
 	"os"
 
-	"k8s.io/apimachinery/pkg/apimachinery/announced"
-	"k8s.io/apimachinery/pkg/apimachinery/registered"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/runtime/serializer"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/announced"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/registered"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer"
 )
 
 // GroupFactoryRegistry is the APIGroupFactoryRegistry (overlaps a bit with Registry, see comments in package for details)

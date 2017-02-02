@@ -20,7 +20,7 @@ import (
 	"path"
 	"testing"
 
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 func TestValidatesHostParameter(t *testing.T) {

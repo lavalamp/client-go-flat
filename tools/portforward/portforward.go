@@ -27,9 +27,9 @@ import (
 	"strings"
 	"sync"
 
-	"k8s.io/apimachinery/pkg/util/httpstream"
-	"k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/httpstream"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 // TODO move to API machinery and re-unify with kubelet/server/portfoward

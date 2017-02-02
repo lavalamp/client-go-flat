@@ -21,9 +21,9 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/runtime"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/apimachinery/pkg/util/wait"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/wait"
 
 	"github.com/golang/glog"
 )

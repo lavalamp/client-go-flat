@@ -26,17 +26,17 @@ import (
 	"strings"
 	"testing"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	uapi "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/client-go/discovery"
-	"k8s.io/client-go/pkg/api"
-	restclient "k8s.io/client-go/rest"
-	"k8s.io/client-go/rest/fake"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	uapi "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/discovery"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	"github.com/lavalamp/client-go-flat/rest/fake"
 
-	_ "k8s.io/client-go/pkg/api/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/api/install"
 )
 
 func objBody(object interface{}) io.ReadCloser {

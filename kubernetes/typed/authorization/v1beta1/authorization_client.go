@@ -18,10 +18,10 @@ package v1beta1
 
 import (
 	fmt "fmt"
-	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
-	api "k8s.io/client-go/pkg/api"
-	rest "k8s.io/client-go/rest"
+	schema "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	serializer "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/serializer"
+	api "github.com/lavalamp/client-go-flat/pkg/api"
+	rest "github.com/lavalamp/client-go-flat/rest"
 )
 
 type AuthorizationV1beta1Interface interface {

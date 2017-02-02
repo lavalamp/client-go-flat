@@ -21,11 +21,11 @@ limitations under the License.
 package extensions
 
 import (
-	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	conversion "k8s.io/apimachinery/pkg/conversion"
-	runtime "k8s.io/apimachinery/pkg/runtime"
-	intstr "k8s.io/apimachinery/pkg/util/intstr"
-	api "k8s.io/client-go/pkg/api"
+	v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	conversion "github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	runtime "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	intstr "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
+	api "github.com/lavalamp/client-go-flat/pkg/api"
 	reflect "reflect"
 )
 

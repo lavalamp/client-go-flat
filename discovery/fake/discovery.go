@@ -21,13 +21,13 @@ import (
 
 	"github.com/emicklei/go-restful/swagger"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/version"
-	"k8s.io/client-go/pkg/api/v1"
-	kubeversion "k8s.io/client-go/pkg/version"
-	restclient "k8s.io/client-go/rest"
-	"k8s.io/client-go/testing"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/version"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	kubeversion "github.com/lavalamp/client-go-flat/pkg/version"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	"github.com/lavalamp/client-go-flat/testing"
 )
 
 type FakeDiscovery struct {

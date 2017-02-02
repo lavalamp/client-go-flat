@@ -17,8 +17,8 @@ limitations under the License.
 package v1
 
 import (
-	"k8s.io/apimachinery/pkg/util/net"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/net"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // The ServiceExpansion interface allows manually adding extra methods to the ServiceInterface.

@@ -27,10 +27,10 @@ import (
 	"github.com/golang/glog"
 	"github.com/imdario/mergo"
 
-	"k8s.io/client-go/pkg/api"
-	restclient "k8s.io/client-go/rest"
-	clientauth "k8s.io/client-go/tools/auth"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	clientauth "github.com/lavalamp/client-go-flat/tools/auth"
+	clientcmdapi "github.com/lavalamp/client-go-flat/tools/clientcmd/api"
 )
 
 var (

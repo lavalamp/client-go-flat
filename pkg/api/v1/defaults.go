@@ -17,10 +17,10 @@ limitations under the License.
 package v1
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/intstr"
-	"k8s.io/client-go/pkg/util"
-	"k8s.io/client-go/pkg/util/parsers"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
+	"github.com/lavalamp/client-go-flat/pkg/util"
+	"github.com/lavalamp/client-go-flat/pkg/util/parsers"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

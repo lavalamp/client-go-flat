@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"github.com/imdario/mergo"
-	restclient "k8s.io/client-go/rest"
-	clientcmdapi "k8s.io/client-go/tools/clientcmd/api"
+	restclient "github.com/lavalamp/client-go-flat/rest"
+	clientcmdapi "github.com/lavalamp/client-go-flat/tools/clientcmd/api"
 )
 
 func TestOldMergoLib(t *testing.T) {

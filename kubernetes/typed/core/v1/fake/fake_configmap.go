@@ -17,13 +17,13 @@ limitations under the License.
 package fake
 
 import (
-	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	labels "k8s.io/apimachinery/pkg/labels"
-	schema "k8s.io/apimachinery/pkg/runtime/schema"
-	types "k8s.io/apimachinery/pkg/types"
-	watch "k8s.io/apimachinery/pkg/watch"
-	v1 "k8s.io/client-go/pkg/api/v1"
-	testing "k8s.io/client-go/testing"
+	meta_v1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	labels "github.com/lavalamp/client-go-flat/apimachinery/pkg/labels"
+	schema "github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	types "github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	watch "github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	v1 "github.com/lavalamp/client-go-flat/pkg/api/v1"
+	testing "github.com/lavalamp/client-go-flat/testing"
 )
 
 // FakeConfigMaps implements ConfigMapInterface

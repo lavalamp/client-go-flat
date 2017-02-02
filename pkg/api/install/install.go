@@ -23,16 +23,16 @@ import (
 
 	"github.com/golang/glog"
 
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/apimachinery"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/api/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
 )
 
-const importPrefix = "k8s.io/client-go/pkg/api"
+const importPrefix = "github.com/lavalamp/client-go-flat/pkg/api"
 
 var accessor = meta.NewAccessor()
 

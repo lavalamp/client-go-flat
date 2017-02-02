@@ -19,9 +19,9 @@ package dynamic
 import (
 	"sync"
 
-	"k8s.io/apimachinery/pkg/api/meta"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/meta"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // ClientPool manages a pool of dynamic clients.

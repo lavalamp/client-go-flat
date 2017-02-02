@@ -17,8 +17,8 @@ limitations under the License.
 package fake
 
 import (
-	"k8s.io/client-go/pkg/api/v1"
-	core "k8s.io/client-go/testing"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	core "github.com/lavalamp/client-go-flat/testing"
 )
 
 func (c *FakeNodes) PatchStatus(nodeName string, data []byte) (*v1.Node, error) {

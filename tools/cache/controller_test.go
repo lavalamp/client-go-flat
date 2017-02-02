@@ -23,13 +23,13 @@ import (
 	"testing"
 	"time"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/apimachinery/pkg/watch"
-	"k8s.io/client-go/pkg/api/v1"
-	fcache "k8s.io/client-go/tools/cache/testing"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/wait"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	fcache "github.com/lavalamp/client-go-flat/tools/cache/testing"
 
 	"github.com/google/gofuzz"
 )

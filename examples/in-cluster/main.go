@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"time"
 
-	"k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/client-go/kubernetes"
-	"k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/kubernetes"
+	"github.com/lavalamp/client-go-flat/rest"
 )
 
 func main() {

@@ -23,7 +23,7 @@ import (
 	"strings"
 	"testing"
 
-	"k8s.io/apimachinery/pkg/util/httpstream"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/httpstream"
 )
 
 type fakeDialer struct {

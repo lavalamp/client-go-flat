@@ -20,13 +20,13 @@ import (
 	"fmt"
 	"sync"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/version"
-	"k8s.io/apimachinery/pkg/watch"
-	kubeversion "k8s.io/client-go/pkg/version"
-	restclient "k8s.io/client-go/rest"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/version"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/watch"
+	kubeversion "github.com/lavalamp/client-go-flat/pkg/version"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // Fake implements client.Interface. Meant to be embedded into a struct to get

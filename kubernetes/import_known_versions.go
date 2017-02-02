@@ -20,18 +20,18 @@ package kubernetes
 import (
 	"fmt"
 
-	"k8s.io/client-go/pkg/api"
-	_ "k8s.io/client-go/pkg/api/install"
-	_ "k8s.io/client-go/pkg/apis/apps/install"
-	_ "k8s.io/client-go/pkg/apis/authentication/install"
-	_ "k8s.io/client-go/pkg/apis/authorization/install"
-	_ "k8s.io/client-go/pkg/apis/autoscaling/install"
-	_ "k8s.io/client-go/pkg/apis/batch/install"
-	_ "k8s.io/client-go/pkg/apis/certificates/install"
-	_ "k8s.io/client-go/pkg/apis/extensions/install"
-	_ "k8s.io/client-go/pkg/apis/policy/install"
-	_ "k8s.io/client-go/pkg/apis/rbac/install"
-	_ "k8s.io/client-go/pkg/apis/storage/install"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	_ "github.com/lavalamp/client-go-flat/pkg/api/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/apps/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/authentication/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/authorization/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/autoscaling/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/batch/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/certificates/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/extensions/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/policy/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/rbac/install"
+	_ "github.com/lavalamp/client-go-flat/pkg/apis/storage/install"
 )
 
 func init() {

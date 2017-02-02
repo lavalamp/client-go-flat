@@ -17,11 +17,11 @@ limitations under the License.
 package v1
 
 import (
-	"k8s.io/apimachinery/pkg/api/resource"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/intstr"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/api/resource"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/intstr"
 )
 
 // The comments for the structs and fields can be used from go-restful to
@@ -65,7 +65,7 @@ import (
 
 // ObjectMeta is metadata that all persisted resources must have, which includes all objects
 // users must create.
-// DEPRECATED: Use k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta instead - this type will be removed soon.
+// DEPRECATED: Use github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1.ObjectMeta instead - this type will be removed soon.
 // +k8s:openapi-gen=false
 type ObjectMeta struct {
 	// Name must be unique within a namespace. Is required when creating resources, although
@@ -120,7 +120,7 @@ type ObjectMeta struct {
 	// Read-only.
 	// More info: http://kubernetes.io/docs/user-guide/identifiers#uids
 	// +optional
-	UID types.UID `json:"uid,omitempty" protobuf:"bytes,5,opt,name=uid,casttype=k8s.io/apimachinery/pkg/types.UID"`
+	UID types.UID `json:"uid,omitempty" protobuf:"bytes,5,opt,name=uid,casttype=github.com/lavalamp/client-go-flat/apimachinery/pkg/types.UID"`
 
 	// An opaque value that represents the internal version of this object that can
 	// be used by clients to determine when objects have changed. May be used for optimistic
@@ -3306,7 +3306,7 @@ type Binding struct {
 type Preconditions struct {
 	// Specifies the target UID.
 	// +optional
-	UID *types.UID `json:"uid,omitempty" protobuf:"bytes,1,opt,name=uid,casttype=k8s.io/apimachinery/pkg/types.UID"`
+	UID *types.UID `json:"uid,omitempty" protobuf:"bytes,1,opt,name=uid,casttype=github.com/lavalamp/client-go-flat/apimachinery/pkg/types.UID"`
 }
 
 // DeleteOptions may be provided when deleting an API object
@@ -3538,7 +3538,7 @@ type ObjectReference struct {
 	// UID of the referent.
 	// More info: http://kubernetes.io/docs/user-guide/identifiers#uids
 	// +optional
-	UID types.UID `json:"uid,omitempty" protobuf:"bytes,4,opt,name=uid,casttype=k8s.io/apimachinery/pkg/types.UID"`
+	UID types.UID `json:"uid,omitempty" protobuf:"bytes,4,opt,name=uid,casttype=github.com/lavalamp/client-go-flat/apimachinery/pkg/types.UID"`
 	// API version of the referent.
 	// +optional
 	APIVersion string `json:"apiVersion,omitempty" protobuf:"bytes,5,opt,name=apiVersion"`

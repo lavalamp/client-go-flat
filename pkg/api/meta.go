@@ -17,7 +17,7 @@ limitations under the License.
 package api
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
 )
 
 // HasObjectMetaSystemFieldValues returns true if fields that are managed by the system on ObjectMeta have values.

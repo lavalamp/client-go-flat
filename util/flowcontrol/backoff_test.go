@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"k8s.io/client-go/util/clock"
+	"github.com/lavalamp/client-go-flat/util/clock"
 )
 
 func TestSlowBackoff(t *testing.T) {

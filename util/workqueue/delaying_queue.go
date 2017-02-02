@@ -20,8 +20,8 @@ import (
 	"sort"
 	"time"
 
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/client-go/util/clock"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/util/clock"
 )
 
 // DelayingInterface is an Interface that can Add an item at a later time. This makes it easier to

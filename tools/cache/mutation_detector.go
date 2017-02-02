@@ -24,9 +24,9 @@ import (
 	"sync"
 	"time"
 
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/diff"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 var mutationDetectionEnabled = false

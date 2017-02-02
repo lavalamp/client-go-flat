@@ -17,10 +17,10 @@ limitations under the License.
 package v1
 
 import (
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/api/v1"
-	policy "k8s.io/client-go/pkg/apis/policy/v1beta1"
-	restclient "k8s.io/client-go/rest"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	policy "github.com/lavalamp/client-go-flat/pkg/apis/policy/v1beta1"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 // The PodExpansion interface allows manually adding extra methods to the PodInterface.

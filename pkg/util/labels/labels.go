@@ -17,7 +17,7 @@ limitations under the License.
 package labels
 
 import (
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
 )
 
 // Clones the given map and returns a new map with the given key and value added.

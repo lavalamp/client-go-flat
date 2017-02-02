@@ -27,11 +27,11 @@ import (
 
 	"github.com/golang/glog"
 
-	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/apimachinery/pkg/util/httpstream"
-	"k8s.io/apimachinery/pkg/util/httpstream/spdy"
-	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-	"k8s.io/client-go/pkg/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/types"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/httpstream"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/httpstream/spdy"
+	utilruntime "github.com/lavalamp/client-go-flat/apimachinery/pkg/util/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
 )
 
 // PortForwarder knows how to forward content from a data stream to/from a port

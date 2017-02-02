@@ -19,13 +19,13 @@ limitations under the License.
 package install
 
 import (
-	"k8s.io/apimachinery/pkg/apimachinery/announced"
-	"k8s.io/apimachinery/pkg/apimachinery/registered"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/apis/batch"
-	"k8s.io/client-go/pkg/apis/batch/v1"
-	"k8s.io/client-go/pkg/apis/batch/v2alpha1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/announced"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/registered"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/apis/batch"
+	"github.com/lavalamp/client-go-flat/pkg/apis/batch/v1"
+	"github.com/lavalamp/client-go-flat/pkg/apis/batch/v2alpha1"
 )
 
 func init() {
@@ -38,7 +38,7 @@ func Install(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *r
 		&announced.GroupMetaFactoryArgs{
 			GroupName:                  batch.GroupName,
 			VersionPreferenceOrder:     []string{v1.SchemeGroupVersion.Version, v2alpha1.SchemeGroupVersion.Version},
-			ImportPrefix:               "k8s.io/client-go/pkg/apis/batch",
+			ImportPrefix:               "github.com/lavalamp/client-go-flat/pkg/apis/batch",
 			AddInternalObjectsToScheme: batch.AddToScheme,
 		},
 		announced.VersionToSchemeFunc{

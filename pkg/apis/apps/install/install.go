@@ -19,12 +19,12 @@ limitations under the License.
 package install
 
 import (
-	"k8s.io/apimachinery/pkg/apimachinery/announced"
-	"k8s.io/apimachinery/pkg/apimachinery/registered"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/pkg/api"
-	"k8s.io/client-go/pkg/apis/apps"
-	"k8s.io/client-go/pkg/apis/apps/v1beta1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/announced"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/apimachinery/registered"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/pkg/api"
+	"github.com/lavalamp/client-go-flat/pkg/apis/apps"
+	"github.com/lavalamp/client-go-flat/pkg/apis/apps/v1beta1"
 )
 
 func init() {
@@ -37,7 +37,7 @@ func Install(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *r
 		&announced.GroupMetaFactoryArgs{
 			GroupName:                  apps.GroupName,
 			VersionPreferenceOrder:     []string{v1beta1.SchemeGroupVersion.Version},
-			ImportPrefix:               "k8s.io/client-go/pkg/apis/apps",
+			ImportPrefix:               "github.com/lavalamp/client-go-flat/pkg/apis/apps",
 			AddInternalObjectsToScheme: apps.AddToScheme,
 		},
 		announced.VersionToSchemeFunc{

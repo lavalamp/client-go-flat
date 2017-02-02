@@ -25,13 +25,13 @@ import (
 
 	"github.com/emicklei/go-restful/swagger"
 
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/apimachinery/pkg/version"
-	. "k8s.io/client-go/discovery"
-	"k8s.io/client-go/pkg/api/v1"
-	restclient "k8s.io/client-go/rest"
+	metav1 "github.com/lavalamp/client-go-flat/apimachinery/pkg/apis/meta/v1"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime/schema"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/util/sets"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/version"
+	. "github.com/lavalamp/client-go-flat/discovery"
+	"github.com/lavalamp/client-go-flat/pkg/api/v1"
+	restclient "github.com/lavalamp/client-go-flat/rest"
 )
 
 func TestGetServerVersion(t *testing.T) {

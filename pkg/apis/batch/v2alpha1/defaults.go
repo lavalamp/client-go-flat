@@ -17,7 +17,7 @@ limitations under the License.
 package v2alpha1
 
 import (
-	"k8s.io/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

@@ -17,8 +17,8 @@ limitations under the License.
 package fake
 
 import (
-	authorizationapi "k8s.io/client-go/pkg/apis/authorization/v1beta1"
-	core "k8s.io/client-go/testing"
+	authorizationapi "github.com/lavalamp/client-go-flat/pkg/apis/authorization/v1beta1"
+	core "github.com/lavalamp/client-go-flat/testing"
 )
 
 func (c *FakeSelfSubjectAccessReviews) Create(sar *authorizationapi.SelfSubjectAccessReview) (result *authorizationapi.SelfSubjectAccessReview, err error) {

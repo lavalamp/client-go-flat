@@ -19,9 +19,9 @@ package v1
 import (
 	"sort"
 
-	"k8s.io/apimachinery/pkg/conversion"
-	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/client-go/tools/clientcmd/api"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/conversion"
+	"github.com/lavalamp/client-go-flat/apimachinery/pkg/runtime"
+	"github.com/lavalamp/client-go-flat/tools/clientcmd/api"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

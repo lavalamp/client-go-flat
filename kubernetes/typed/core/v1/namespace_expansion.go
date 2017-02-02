@@ -16,7 +16,7 @@ limitations under the License.
 
 package v1
 
-import "k8s.io/client-go/pkg/api/v1"
+import "github.com/lavalamp/client-go-flat/pkg/api/v1"
 
 // The NamespaceExpansion interface allows manually adding extra methods to the NamespaceInterface.
 type NamespaceExpansion interface {
