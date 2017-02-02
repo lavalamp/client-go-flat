@@ -27,10 +27,10 @@ mv vendor/k8s.io/apimachinery/ apimachinery
 find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/apimachinery|k8s.io/client-go/apimachinery|'
 
 # rewrite package names so go get from dest will work
-find . | grep "[.]go$" | xargs -n 1 sed -i "'s|k8s.io/client-go|${DEST_REPO}|'"
+find . | grep "[.]go$" | xargs -n 1 sed -i "s|k8s.io/client-go|${DEST_REPO}|"
 
 git add apimachinery
 git commit -a -m "automated dependency flattening"
-git push -f "${REMOTE}" "${LOCAL}:master"
+git push -f "${REMOTE}" "${LOCAL_BRANCH}:master"
 git reset --hard HEAD^
 git reset --soft HEAD^
