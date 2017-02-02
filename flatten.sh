@@ -14,16 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+DEST_REPO=github.com/lavalamp/client-go-flat
+REMOTE=flat
+LOCAL_BRANCH=master
+
 git commit -a -m "preserve local changes"
 
 mv vendor/k8s.io/apimachinery/ apimachinery
 
+# flatten references to apimachinery
 find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/apimachinery|k8s.io/client-go/apimachinery|'
-#find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/client-go/pkg/api/v1|k8s.io/client-go/apimachinery/pkg/api/v1|'
-find . | grep "[.]go$" | xargs -n 1 sed -i 's|k8s.io/client-go|github.com/lavalamp/client-go-flat|'
+
+# rewrite package names so go get from dest will work
+find . | grep "[.]go$" | xargs -n 1 sed -i "'s|k8s.io/client-go|${DEST_REPO}|'"
 
 git add apimachinery
 git commit -a -m "automated dependency flattening"
-git push -f flat master:master
+git push -f "${REMOTE}" "${LOCAL}:master"
 git reset --hard HEAD^
 git reset --soft HEAD^
